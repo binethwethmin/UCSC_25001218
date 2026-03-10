@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Idea Board</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            background-color: #2e5090;
+            color: white;
+            padding: 15px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .content {
+            padding: 20px;
+        }
+        
+        .input-section {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        select, input {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            font-size: 14px;
+        }
+        
+        select {
+            flex: 0 0 180px;
+            background-color: white;
+        }
+        
+        input[type="text"] {
+            flex: 1;
+            color: #999;
+        }
+        
+        button {
+            padding: 10px 20px;
+            background-color: #2e5090;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        
+        button:hover {
+            background-color: #1e3a5f;
+        }
+        
+        .ideas-list {
+            list-style-position: inside;
+        }
+        
+        .ideas-list li {
+            margin-bottom: 10px;
+            line-height: 1.5;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Group Idea Board</div>
+        
+        <div class="content">
+            <div class="input-section">
+                <select>
+                    <option>Select your name...</option>
+                </select>
+                <input type="text" placeholder="Enter your idea here...">
+                <button>Add Idea</button>
+            </div>
+            
+            <ul class="ideas-list">
+                <li>Build a study planner – suggested by Nimel</li>
+                <li>Start a podcast – suggested by Sara</li>
+                <li>Organize a coding workshop – suggested by Alex</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
